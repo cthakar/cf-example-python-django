@@ -18,7 +18,8 @@ steps:
     image_name: cthakar/codefresh-demo
     registry: ${{REGISTRY_NAME}}
     working_directory: ./
-    tag: 'debug-${{CF_SHORT_REVISION}}'
+    #tag: 'debug-${{CF_SHORT_REVISION}}'
+    tag: 'debug-${{RANDOM}}'
     dockerfile: Dockerfile
     no_cache: true
     no_cf_cache: true

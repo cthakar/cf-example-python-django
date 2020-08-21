@@ -24,7 +24,8 @@ steps:
     type: build
     image_name: cthakar/codefresh-demo
     working_directory: ./
-    tag: 'debug-${{CF_SHORT_REVISION}}'
+    #tag: 'debug-${{CF_SHORT_REVISION}}'
+    tag: 'debug-${{RANDOM}}'
     dockerfile: Dockerfile
     registry: ${{REGISTRY_NAME}}
     no_cache: true
