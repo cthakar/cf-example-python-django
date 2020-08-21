@@ -8,8 +8,9 @@ RUN pip install --upgrade pip
 COPY requirements.txt /code/
 
 RUN pip install -r requirements.txt
-COPY . /code/
 COPY ./polls /code/polls/
+COPY ./composeexample /code/composeexample/
+ADD requirements.txt manage.py codefresh.yml codefresh-build-after-test.yml Dockerfile /code/
 
 EXPOSE 8000
 
