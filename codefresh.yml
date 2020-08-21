@@ -16,6 +16,7 @@ steps:
     stage: build
     type: build
     image_name: my-django-image
+    registry: ${{REGISTRY_NAME}}
     working_directory: ./
     tag: master
     dockerfile: Dockerfile

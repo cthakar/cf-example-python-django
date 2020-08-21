@@ -26,3 +26,4 @@ steps:
     working_directory: ./
     tag: full
     dockerfile: Dockerfile
+    registry: ${{REGISTRY_NAME}}
