@@ -18,7 +18,7 @@ steps:
     image_name: cthakar/codefresh-demo
     registry: ${{REGISTRY_NAME}}
     working_directory: ./
-    tag: '${{CF_BRANCH}}-{{CF_REVISION}}'
+    tag: '${{CF_SHORT_REVISION}}'
     dockerfile: Dockerfile
   test_my_image:
      title: Running unit tests
