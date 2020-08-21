@@ -11,7 +11,6 @@ steps:
     repo: 'codefreshdemo/cf-example-python-django'
     revision: master
     git: github
-    no_cf_cache: true
   test_the_code:
      title: Run unit tests
      stage: test
@@ -29,4 +28,5 @@ steps:
     dockerfile: Dockerfile
     registry: ${{REGISTRY_NAME}}
     no_cache: true
+    no_cf_cache: true
 

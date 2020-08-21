@@ -11,7 +11,6 @@ steps:
     repo: 'codefreshdemo/cf-example-python-django'
     revision: master
     git: github
-    no_cf_cache: true
   build_my_image:
     title: Building Docker Image
     stage: build
@@ -22,6 +21,7 @@ steps:
     tag: '${{CF_SHORT_REVISION}}'
     dockerfile: Dockerfile
     no_cache: true
+    no_cf_cache: true
   test_my_image:
      title: Running unit tests
      stage: test
