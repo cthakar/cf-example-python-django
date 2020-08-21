@@ -24,6 +24,6 @@ steps:
     type: build
     image_name: cthakar/codefresh-demo
     working_directory: ./
-    tag: full
+    tag: '${{CF_BRANCH}}-{{CF_REVISION}}'
     dockerfile: Dockerfile
     registry: ${{REGISTRY_NAME}}
