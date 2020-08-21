@@ -20,8 +20,8 @@ steps:
     working_directory: ./
     tag: '${{CF_SHORT_REVISION}}'
     dockerfile: Dockerfile
-    no_cache: false
-    no_cf_cache: false
+    no_cache: true
+    no_cf_cache: true
   test_my_image:
      title: Running unit tests
      stage: test

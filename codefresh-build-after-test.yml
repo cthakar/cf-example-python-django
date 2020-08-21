@@ -27,6 +27,6 @@ steps:
     tag: '${{CF_SHORT_REVISION}}'
     dockerfile: Dockerfile
     registry: ${{REGISTRY_NAME}}
-    no_cache: false
-    no_cf_cache: false
+    no_cache: true
+    no_cf_cache: true
 
