@@ -27,6 +27,8 @@ steps:
     #tag: 'debug-${{CF_SHORT_REVISION}}'
     tag: 'debug-${{RANDOM}}'
     dockerfile: Dockerfile
+    build_arguments:
+      - --no-cache
     registry: ${{REGISTRY_NAME}}
     no_cache: true
     no_cf_cache: true

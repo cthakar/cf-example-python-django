@@ -1,5 +1,6 @@
 # Dockerized Django application
 
+
 ![Docker plus Django plus Codefresh](docker-django-codefresh.jpg)
 
 This is an example Python application that uses Django, pip and Docker.
